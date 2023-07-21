@@ -2,7 +2,7 @@ package com.roaa.security.user;
 
 
 
-public class Role {
+public enum Role {
 
 	USER,
 	
