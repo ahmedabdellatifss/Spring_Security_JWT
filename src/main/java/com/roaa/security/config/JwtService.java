@@ -1,4 +1,4 @@
-package config;
+package com.roaa.security.config;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -25,8 +25,6 @@ public class JwtService {
 		
 		return extractClaim(token, Claims::getSubject);
 	}
-	
-	
 	
 	
 	

@@ -1,4 +1,4 @@
-package auth;
+package com.roaa.security.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,16 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
-	
-	
+public class AuthenticationResponse {
 
-	private String firstname;
-	
-	private String lastname;
-	
-	private String email;
-	
-	private String password;
-	
+	private String token;
 }

@@ -1,15 +1,16 @@
-package auth;
+package com.roaa.security.auth;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.User;
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.roaa.security.user.Role;
+import com.roaa.security.user.User;
 import com.roaa.security.user.UserRepository;
 
-import config.JwtService;
+import com.roaa.security.config.JwtService;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -24,7 +25,7 @@ public class AuthenticationService {
 	
 	
 	public AuthenticationResponse register(RegisterRequest request) {
-		var user = User.builder().
+		var user = User.builder()
 				.firstname(request.getFirstname())
 				.lastname(request.getLastname())
 				.email(request.getEmail())

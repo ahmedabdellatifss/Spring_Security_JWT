@@ -1,4 +1,4 @@
-package config;
+package com.roaa.security.config;
 
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.context.annotation.Bean;

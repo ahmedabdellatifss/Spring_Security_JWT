@@ -13,8 +13,8 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -32,12 +32,12 @@ public class User implements UserDetails {
 	
 	private String firstname;
 	
-	private String lasstname;
+	private String lastname;
 	
 	private String email;
 	
 	private String password;
-	
+
 	@Enumerated(EnumType.STRING)
 	private Role role;
 
@@ -79,7 +79,6 @@ public class User implements UserDetails {
 
 	@Override
 	public boolean isEnabled() {
-		
 		return true;
 	}
 	

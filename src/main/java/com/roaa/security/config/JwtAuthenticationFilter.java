@@ -1,4 +1,4 @@
-package config;
+package com.roaa.security.config;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter{
 	
 	private final JwtService jwtService;
 	
-	private UserDetailsService userDetailsService;
+	private final UserDetailsService userDetailsService;
 
 	@Override
 	protected void doFilterInternal(
